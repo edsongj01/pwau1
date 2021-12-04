@@ -12,7 +12,7 @@ self.addEventListener('fetch',(event)=>{
     console.log(event.request.url);
 
     if(event.request.url.includes('.PNG')){
-        let newResp = fetch('/images/michi.jpg');
+        let newResp = fetch('images/michi.jpg');
         console.log('Es una imagen');
         event.respondWith(newResp);
     }
